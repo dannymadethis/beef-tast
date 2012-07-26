@@ -1,0 +1,688 @@
+body, html
+{
+	margin: 0px;
+	padding: 0px;
+	font-family:Verdana, sans-serif; 
+	font-size: 12px;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+ul, li, ol, h1, h2, h3, h4, h5, p, a, input, form, select, td, tr, table, div, span, tbody, img
+{
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+input:focus
+{
+	outline: none;
+	box-shadow: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+
+
+
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible; // Inner spacing ie IE6/7
+  line-height: normal; // FF3/4 have !important on line-height in UA stylesheet
+ }
+  
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    cursor: pointer; // Cursors on all buttons applied consistently
+    -webkit-appearance: button; // Style clicable inputs in iOS
+    
+    }
+    
+    
+input[type="search"] { // Appearance in Safari/Chrome
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; // Inner-padding issues in Chrome OSX, Safari 5
+}
+textarea {
+  overflow: auto; // Remove vertical scrollbar in IE6-9
+  vertical-align: top; // Readability and alignment cross-browser
+}
+
+//site width
+@sitewidth: 960px;
+
+.sitewidth
+{
+	width: @sitewidth;
+}
+
+//fixed grid
+@gutter: 20px;
+
+@colum: 6;
+
+@col:(@sitewidth/@colum);
+
+@col1:(@col * 1)- (@gutter);
+@col2:(@col * 2) - (@gutter);
+@col3:(@col * 3) - (@gutter);
+@col4:(@col * 4) - (@gutter);
+@col5:(@col * 5) - (@gutter);
+@col6:(@col * 6) - (@gutter);
+@col7:(@col * 7) - (@gutter);
+@col8:(@col * 8) - (@gutter);
+@col9:(@col * 9) - (@gutter);
+@col10:(@col * 10) - (@gutter);
+@col11:(@col * 11) - (@gutter);
+@col12:(@col * 12) - (@gutter);
+@col13:(@col * 13) - (@gutter);
+@col14:(@col * 14) - (@gutter);
+@col15:(@col * 15) - (@gutter);
+@col16:(@col * 16) - (@gutter);
+@col17:(@col * 17) - (@gutter);
+@col18:(@col * 18) - (@gutter);
+@col19:(@col * 19) - (@gutter);
+@col20:(@col * 20) - (@gutter);
+@col21:(@col * 21) - (@gutter);
+@col22:(@col * 22) - (@gutter);
+@col23:(@col * 23) - (@gutter);
+@col24:(@col * 24) - (@gutter);
+
+.container
+{
+	width: 100%;
+	
+	.container-inner
+	{
+		.sitewidth;
+		.margin(0 auto);
+		
+
+		.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11,.col12, .col13, .col14, .col15, .col16,.col17, .col18, .col19, .col20, .col21, .col22, .col23, .col24
+		{
+			margin-right: @gutter/2;
+			margin-left: @gutter/2;
+			.fl;
+		}
+	}
+}
+		.col1
+		{
+			width: @col1;
+		}
+		
+		.col2
+		{
+			width: @col2;
+			
+		}
+		.col3
+		{
+			width: @col3;
+		}
+		.col4
+		{
+			width: @col4;
+		}
+		.col5
+		{
+			width: @col5;
+		}
+		.col6
+		{
+			width: @col6;
+		}
+		.col7
+		{
+			width: @col7;
+		}
+		.col8
+		{
+			width: @col8;
+		}
+		.col9
+		{
+			width: @col9;
+		}
+		.col10
+		{
+			width: @col10;
+		}
+		.col11
+		{
+			width: @col11;
+		}
+		.col12
+		{
+			width: @col12;
+		}
+		
+		.col13
+		{
+			width: @col13;
+		}
+		
+		.col14
+		{
+			width: @col14;
+		}
+		
+		.col15
+		{
+			width: @col15;
+		}
+		
+		.col16
+		{
+			width: @col16;
+		}
+		
+		.col17
+		{
+			width: @col17;
+		}
+		
+		.col18
+		{
+			width: @col18;
+			
+		}
+		
+		.col19
+		{
+			width: @col19;
+		}
+		
+		.col20
+		{
+			width: @col20;
+		}
+		
+		.col21
+		{
+			width: @col21;
+		}
+		
+		.col22
+		{
+			width: @col22;
+		}
+		
+		.col23
+		{
+			width: @col23;
+		}
+		.col24
+		{
+			width: @col24;
+		}
+
+
+//fluid
+
+
+@fcol1: (100%/16)-2%;
+@fcol2: (100%/16)*2-2%;
+@fcol3: (100%/16)*3-2%;
+@fcol4: (100%/16)*4-2%;
+@fcol5: (100%/16)*5-2%;
+@fcol6: (100%/16)*6-2%;
+@fcol7: (100%/16)*7-2%;
+@fcol8: (100%/16)*8-2%;
+@fcol9: (100%/16)*9-2%;
+@fcol10: (100%/16)*10-2%;
+@fcol11: (100%/16)*11-2%;
+@fcol12: (100%/16)*12-2%;
+@fcol13: (100%/16)*13-2%;
+@fcol14: (100%/16)*14-2%;
+@fcol15: (100%/16)*15-2%;
+@fcol16: (100%/16)*16-2%;
+
+.containerf
+{
+	width: 100%;
+	max-width: @sitewidth;
+	min-width: 480px;
+	.margin(0 auto);
+	.overhide;
+	
+	.fcol1, .fcol2, .fcol3, .fcol4, .fcol5, .fcol6, .fcol7, .fcol8, .fcol9, .fcol10, .fcol11,.fcol12, .fcol13, .fcol14, .fcol15, .fcol16,.fcol17, .fcol18, .fcol19, .fcol20, .fcol21, .fcol22, .fcol23, .fcol24
+	{
+		margin-right: 1%;
+		margin-left: 1%;
+		float: left;
+		min-height:1px;
+	}
+	
+	.fcol1
+	{
+		width: @fcol1;
+	}
+	.fcol2
+	{
+		width: @fcol2;
+	}
+	.fcol3
+	{
+		width: @fcol3;
+	}
+	.fcol4
+	{
+		width: @fcol4;
+	}
+	.fcol5
+	{
+		width: @fcol5;
+	}
+	.fcol6
+	{
+		width: @fcol6;
+	}
+	.fcol7
+	{
+		width: @fcol7;
+	}
+	.fcol8
+	{
+		width: @fcol8;
+	}
+	.fcol9
+	{
+		width: @fcol9;
+	}
+	.fcol10
+	{
+		width: @fcol10;
+	}
+	.fcol11
+	{
+		width: @fcol11;
+	}
+	.fcol12
+	{
+		width: @fcol12;
+	}
+	.fcol13
+	{
+		width: @fcol13;
+	}
+	.fcol14
+	{
+		width: @fcol14;
+	}
+	.fcol15
+	{
+		width: @fcol15;
+	}
+	.fcol16
+	{
+		width: @fcol16;
+	}
+}
+	
+.last
+{
+	margin-right: 0px !important;
+}
+.first
+{
+	margin-left: 1%;
+}	
+		
+//mobile
+
+@media handheld, only screen and (max-width: 480px) {
+
+	body {
+	font-size: 14px;
+	-webkit-text-size-adjust: none;
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.containerf .fcol1, .containerf .fcol2, .containerf .fcol3, .containerf .fcol4, .containerf .fcol5, .containerf .fcol6, .containerfw .fcol7, .containerf .fcol8, .containerf .fcol9, .containerf .fcol10, .containerf .fcol11, .containerf .fcol12, .containerf .fcol13, .containerf .fcol14, .containerf .fcol15, .containerf .fcol16 {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+}
+
+
+//MEDIA
+figure {margin: 0}
+
+img {border: 0;	-ms-interpolation-mode: bicubic} /* Improve IE's resizing of images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+
+
+//clears
+.cb
+{
+	clear: both;
+}
+.cl
+{
+	clear: left;
+}
+
+.cr
+{
+	clear: right;
+}
+
+//floats
+.fl
+{
+	float: left;
+}
+
+.fr
+{
+	float: right;
+}
+
+//background colour
+@backcolor: #fff;
+
+.bg
+{
+	background-color: @backcolor;
+}
+
+//lists
+.listno
+{
+	list-style: none;
+}
+
+//overflows
+.overhide
+{
+	overflow: hidden;
+}
+
+.overscroll
+{
+	overflow: scroll;
+}
+
+.overvis
+{
+	overflow: visible;
+}
+//text align
+
+.textc
+{
+	text-align: center;
+}
+
+.textl
+{
+	text-align: left;
+}
+
+.textr
+{
+	text-align: right;
+}
+
+
+
+//positions
+
+.posrel
+{
+	position: relative;
+}
+
+.posabso
+{
+	position: absolute;
+}
+
+.posfix
+{
+	position: fixed;
+}
+//margins
+.margin(@margins: 0 5px 0 5px)
+{
+	margin: @margins;
+}
+
+
+//padding
+
+.pad(@padding: 10px)
+{
+	padding: @padding;
+}
+
+//font weight
+.bold(@fweight: bold)
+{
+	font-weight: @fwight;
+}
+//borders
+@borcolor: #999;
+
+.borderno
+{
+	border: none !important;
+}
+.bortop(@bw: 1px)
+{
+	border-top: @bw solid @borcolor;
+}
+
+.borbot(@bw: 1px)
+{
+	border-bottom: @bw solid @borcolor;
+}
+
+.borleft(@bw: 1px)
+{
+	border-left: @bw solid @borcolor;
+}
+
+.borright(@bw: 1px)
+{
+	border-right: @bw solid @borcolor;
+}
+
+.border(@bw: 1px)
+{
+	border: @bw solid @borcolor;
+}
+//border-radius
+.border-radius(@radius: 5px) 
+{
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+//links
+@linkscolor: red;
+@linkscolor-hover: blue;
+@linkscolor-active: yellow;
+
+.linkcolor
+{
+	color: @linkscolor;
+	
+	&:hover
+	{
+		color: @linkscolor-hover;
+	}
+	
+	&:active
+	{
+		color: @linkscolor-active;
+	}
+}
+
+//opacity
+ .opacity(@opac: 1)
+ {
+ 	opacity: @opac;
+ }
+
+
+h1
+{
+	font-family: Univers LT Std 59 Ultra Condensed;
+	text-transform:uppercase;
+	font-weight: normal;
+	color: #455560;
+	font-size: 18px;
+	
+	
+}
+
+h2
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: bold;
+	color: #455560;
+	font-size: 22px;
+	
+}
+
+h3
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: bold;
+	color: #455560;
+	font-size: 16px;
+	
+	
+}
+
+h4
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: bold;
+	color: #455560;
+	font-size: 12px;
+	
+}
+
+h5
+{
+	
+}
+
+p
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+	font-size: 12px;
+	line-height: 20px;
+	
+}
+
+.intro
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.quote
+{
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+	font-size: 12px;
+	text-indent: 70px;
+	font-style: italic;
+}
+//garys
+@white: #fff;
+@g5: #555;
+@g9: #999;
+@gc: #ccc;
+@g6: #666;
+@g7: #777;
+@g3 :#333;
+@g2: #222;
+
+//colours
+@green: #58cc58;
+@pink: #f4a2c3;
+@blue: #7ae6f4;
+@slate: #455560;
+@yellow: #FFCB6E;
+@yellowd: #DBA348;
